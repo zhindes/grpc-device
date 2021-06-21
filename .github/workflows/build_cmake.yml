@@ -110,7 +110,7 @@ jobs:
         endif()
 
     - name: Tar Linux Server Binaries
-      if: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/releases')) && (runner.os == 'Linux') }}
+      if: ${{ runner.os == 'Linux' }}
       run: >-
         tar -cvzf ni-grpc-device-server-linux-glibc2_23-x64.tar.gz
         -C ${GITHUB_WORKSPACE}/build
@@ -122,14 +122,14 @@ jobs:
 
     - name: Upload Linux Server Binaries Artifact
       uses: actions/upload-artifact@v2
-      if: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/releases')) && (runner.os == 'Linux') }}
+      if: ${{ runner.os == 'Linux' }}
       with:
         name: ni-grpc-device-server-linux-glibc2_23-x64
         path: ni-grpc-device-server-linux-glibc2_23-x64.tar.gz
         retention-days: 5
 
     - name: Tar Linux Test Binaries
-      if: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/releases')) && (runner.os == 'Linux') }}
+      if: ${{ runner.os == 'Linux' }}
       run: >-
         tar -cvzf ni-grpc-device-tests-linux-glibc2_23-x64.tar.gz
         -C ${GITHUB_WORKSPACE}/build
@@ -145,7 +145,7 @@ jobs:
 
     - name: Upload Linux Test Binaries Artifact
       uses: actions/upload-artifact@v2
-      if: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/releases')) && (runner.os == 'Linux') }}
+      if: ${{ runner.os == 'Linux' }}
       with:
         name: ni-grpc-device-tests-linux-glibc2_23-x64
         path: ni-grpc-device-tests-linux-glibc2_23-x64.tar.gz
@@ -153,7 +153,7 @@ jobs:
 
     - name: Upload Windows Server Binaries Artifact
       uses: actions/upload-artifact@v2
-      if: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/releases')) && (runner.os == 'Windows') }}
+      if: ${{ runner.os == 'Windows' }}
       with:
         name: ni-grpc-device-server-windows-x64
         path: |
@@ -165,7 +165,7 @@ jobs:
 
     - name: Upload Windows Test Binaries Artifact
       uses: actions/upload-artifact@v2
-      if: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/releases')) && (runner.os == 'Windows') }}
+      if: ${{ runner.os == 'Windows' }}
       with:
         name: ni-grpc-device-tests-windows-x64
         path: |
