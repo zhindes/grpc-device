@@ -2646,6 +2646,31 @@ enums = {
             }
         ]
     },
+    'NavMode': {
+        'values': [
+            {
+                'documentation': {
+                    'description': 'Mobile navigation mode.'
+                },
+                'name': 'MOBILE',
+                'value': 15989
+            },
+            {
+                'documentation': {
+                    'description': 'Stationary with survey navigation mode.'
+                },
+                'name': 'STATIONARY_WITH_SURVEY',
+                'value': 15990
+            },
+            {
+                'documentation': {
+                    'description': 'Stationary with Preset Location navigation mode.'
+                },
+                'name': 'STATIONARY_WITH_PRESET_LOCATION',
+                'value': 15991
+            }
+        ]
+    },
     'OutputDataTransferCondition': {
         'values': [
             {
