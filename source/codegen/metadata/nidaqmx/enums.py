@@ -2593,6 +2593,59 @@ enums = {
             }
         ]
     },
+    'NavMeasurementType': {
+        'values': [
+            {
+                'documentation': {
+                    'description': 'altitude.'
+                },
+                'name': 'ALTITUDE',
+                'value': 15997
+            },
+            {
+                'documentation': {
+                    'description': 'longitude.'
+                },
+                'name': 'LONGITUDE',
+                'value': 15998
+            },
+            {
+                'documentation': {
+                    'description': 'latitude.'
+                },
+                'name': 'LATITUDE',
+                'value': 15999
+            },
+            {
+                'documentation': {
+                    'description': 'speed over ground.'
+                },
+                'name': 'SPEED_OVER_GROUND',
+                'value': 16000
+            },
+            {
+                'documentation': {
+                    'description': 'direction one is traveling relative to one of the North (which?).'
+                },
+                'name': 'TRACK',
+                'value': 16001
+            },
+            {
+                'documentation': {
+                    'description': 'timestamp.'
+                },
+                'name': 'TIMESTAMP',
+                'value': 15986
+            },
+            {
+                'documentation': {
+                    'description': 'vertical velocity.'
+                },
+                'name': 'VERT_VELOCITY',
+                'value': 16003
+            }
+        ]
+    },
     'OutputDataTransferCondition': {
         'values': [
             {
