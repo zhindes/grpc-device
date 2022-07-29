@@ -470,6 +470,24 @@ enums = {
             }
         ]
     },
+    'AltRef': {
+        'values': [
+            {
+                'documentation': {
+                    'description': 'Mean sea level (MSL).'
+                },
+                'name': 'MSL',
+                'value': 16005
+            },
+            {
+                'documentation': {
+                    'description': 'Height above ellipsoid (HAE).'
+                },
+                'name': 'HAE',
+                'value': 16006
+            }
+        ]
+    },
     'AngleUnits1': {
         'values': [
             {
@@ -574,6 +592,38 @@ enums = {
                 },
                 'name': 'FROM_CUSTOM_SCALE',
                 'value': 10065
+            }
+        ]
+    },
+    'AntStatus': {
+        'values': [
+            {
+                'documentation': {
+                    'description': 'Unknown antenna status.'
+                },
+                'name': 'UNKNOWN',
+                'value': 12588
+            },
+            {
+                'documentation': {
+                    'description': 'Antenna is connected and functioning normally.'
+                },
+                'name': 'NORMAL',
+                'value': 10459
+            },
+            {
+                'documentation': {
+                    'description': 'Antenna is absent.'
+                },
+                'name': 'ABSENT',
+                'value': 15994
+            },
+            {
+                'documentation': {
+                    'description': 'Overcurrent with the antenna.'
+                },
+                'name': 'OVERCURRENT',
+                'value': 15995
             }
         ]
     },
