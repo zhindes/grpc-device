@@ -6016,7 +6016,7 @@ functions = {
                 'type': 'int32[]'
             },
             {
-                'direction': 'out',
+                'direction': 'in',
                 'name': 'arraySizePtr',
                 'type': 'uInt32'
             }
